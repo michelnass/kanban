@@ -1,8 +1,8 @@
-import { kv } from '@vercel/kv';
+import { put, list } from '@vercel/blob';
 import fs from 'fs';
 import path from 'path';
 
-const useKV = process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN;
+const useBlob = !!process.env.BLOB_READ_WRITE_TOKEN;
 
 // Local fallback DB
 const dataDir = process.env.DATA_DIR || process.cwd();
@@ -37,10 +37,19 @@ async function saveLocalDb(data: any) {
 export async function getBoard(id: string) {
   let boardData: any;
 
-  if (useKV) {
-    const data = await kv.get(`board:${id}`);
-    if (data) {
-      boardData = data;
+  if (useBlob) {
+    try {
+      // Find the specific blob URL from the store
+      const { blobs } = await list({ prefix: `board_${id}.json` });
+      if (blobs.length > 0) {
+        // Cache bypass is critical when updating Vercel Blobs frequently
+        const response = await fetch(`${blobs[0].url}?t=${Date.now()}`, { cache: 'no-store' });
+        if (response.ok) {
+          boardData = await response.json();
+        }
+      }
+    } catch (e) {
+      console.error('Failed to load from Vercel Blob', e);
     }
   } else {
     const db = await getLocalDb();
@@ -72,8 +81,15 @@ export async function getBoard(id: string) {
 export async function saveBoard(id: string, columns: any[], items: any[], history: any[]) {
   const boardData = { columns, items, history };
 
-  if (useKV) {
-    await kv.set(`board:${id}`, boardData);
+  if (useBlob) {
+    try {
+        await put(`board_${id}.json`, JSON.stringify(boardData), {
+        access: 'public',
+        addRandomSuffix: false, // Ensures we continuously overwrite the same file
+      });
+    } catch (e) {
+      console.error('Failed to save to Vercel Blob', e);
+    }
   } else {
     const db = await getLocalDb();
     db.boards[id] = boardData;
