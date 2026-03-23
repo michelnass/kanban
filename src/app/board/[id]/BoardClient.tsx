@@ -54,17 +54,28 @@ export default function BoardClient({ boardId }: { boardId: string }) {
     useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates })
   );
 
+  const isDraggingRef = React.useRef(false);
+  isDraggingRef.current = activeItem !== null || activeColumn !== null;
+
   useEffect(() => {
-    fetch(`/api/board/${boardId}`)
-      .then(res => res.json())
-      .then(data => {
-        if (data.board) {
-          setColumns(data.board.columns || []);
-          setItems(data.board.items || []);
-          setHistory(data.board.history || []);
-        }
-        setLoading(false);
-      });
+    const loadBoard = () => {
+      if (isDraggingRef.current) return;
+      
+      fetch(`/api/board/${boardId}`)
+        .then(res => res.json())
+        .then(data => {
+          if (data.board && !isDraggingRef.current) {
+            setColumns(data.board.columns || []);
+            setItems(data.board.items || []);
+            setHistory(data.board.history || []);
+          }
+          setLoading(false);
+        });
+    };
+
+    loadBoard();
+    const interval = setInterval(loadBoard, 3000); // Poll every 3s
+    return () => clearInterval(interval);
   }, [boardId]);
 
   const syncToServer = async (newColumns: Column[], newItems: Item[], newHistory: HistoryState[]) => {
