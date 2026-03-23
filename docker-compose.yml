@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  kanban-app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      # This binds the local data.json so it isn't lost when the container restarts
+      - ./data.json:/app/data.json
+    restart: always

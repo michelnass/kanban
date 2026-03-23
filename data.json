@@ -1,0 +1,430 @@
+{
+  "boards": {
+    "fa842f51-ecdd-4786-9fc1-66fb0a87a94a": {
+      "items": [
+        {
+          "id": "1",
+          "columnId": "todo",
+          "content": "Create project plan"
+        },
+        {
+          "id": "2",
+          "columnId": "todo",
+          "content": "Design mockup"
+        },
+        {
+          "id": "3",
+          "columnId": "in-progress",
+          "content": "Setup Next.js environment"
+        }
+      ],
+      "history": [
+        [
+          {
+            "id": "1",
+            "columnId": "todo",
+            "content": "Create project plan"
+          },
+          {
+            "id": "2",
+            "columnId": "todo",
+            "content": "Design mockup"
+          },
+          {
+            "id": "3",
+            "columnId": "in-progress",
+            "content": "Setup Next.js environment"
+          }
+        ],
+        [
+          {
+            "id": "1",
+            "columnId": "todo",
+            "content": "Create project plan"
+          },
+          {
+            "id": "2",
+            "columnId": "todo",
+            "content": "Design mockup"
+          },
+          {
+            "id": "3",
+            "columnId": "in-progress",
+            "content": "Setup Next.js environment"
+          }
+        ],
+        [
+          {
+            "id": "1",
+            "columnId": "todo",
+            "content": "Create project plan"
+          },
+          {
+            "id": "2",
+            "columnId": "todo",
+            "content": "Design mockup"
+          },
+          {
+            "id": "3",
+            "columnId": "in-progress",
+            "content": "Setup Next.js environment"
+          }
+        ]
+      ],
+      "columns": [
+        {
+          "id": "todo",
+          "title": "To Do"
+        },
+        {
+          "id": "in-progress",
+          "title": "In Progress"
+        },
+        {
+          "id": "done",
+          "title": "Done"
+        }
+      ]
+    },
+    "a4e275ed-d5c5-4b2f-9572-f81fb40f4931": {
+      "columns": [
+        {
+          "id": "todo",
+          "title": "To Do"
+        },
+        {
+          "id": "in-progress",
+          "title": "In Progress"
+        },
+        {
+          "id": "done",
+          "title": "Done"
+        }
+      ],
+      "items": [
+        {
+          "id": "ea098e92-8152-477b-a740-59fe407d4d73",
+          "columnId": "in-progress",
+          "content": "Trip to Paris"
+        },
+        {
+          "id": "a08060b2-0a7c-42d2-8561-09969b800116",
+          "columnId": "todo",
+          "content": "Trip to Italy"
+        },
+        {
+          "id": "c1f98b6c-87b3-4423-97e3-604da26ab99f",
+          "columnId": "todo",
+          "content": "Trip to Iceland"
+        },
+        {
+          "id": "64b2d059-bf06-4b56-adbd-30e0a9c605e4",
+          "columnId": "todo",
+          "content": "Trip to Prague"
+        }
+      ],
+      "history": [
+        {
+          "items": [
+            {
+              "id": "23a944a4-25e4-410a-b8a7-0af981f47dcf",
+              "columnId": "4d807253-f101-4043-ac02-aad64d94cdd2",
+              "content": "Trip to Paris"
+            }
+          ],
+          "columns": [
+            {
+              "id": "todo",
+              "title": "To Do"
+            },
+            {
+              "id": "in-progress",
+              "title": "In Progress"
+            },
+            {
+              "id": "done",
+              "title": "Done"
+            },
+            {
+              "id": "4d807253-f101-4043-ac02-aad64d94cdd2",
+              "title": "Done Done"
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "id": "23a944a4-25e4-410a-b8a7-0af981f47dcf",
+              "columnId": "4d807253-f101-4043-ac02-aad64d94cdd2",
+              "content": "Trip to Paris"
+            }
+          ],
+          "columns": [
+            {
+              "id": "todo",
+              "title": "To Do"
+            },
+            {
+              "id": "in-progress",
+              "title": "In Progress"
+            },
+            {
+              "id": "done",
+              "title": "Done"
+            },
+            {
+              "id": "4d807253-f101-4043-ac02-aad64d94cdd2",
+              "title": "Done Done"
+            }
+          ]
+        },
+        {
+          "items": [],
+          "columns": [
+            {
+              "id": "todo",
+              "title": "To Do"
+            },
+            {
+              "id": "in-progress",
+              "title": "In Progress"
+            },
+            {
+              "id": "done",
+              "title": "Done"
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "id": "ea098e92-8152-477b-a740-59fe407d4d73",
+              "columnId": "in-progress",
+              "content": "Trip to Paris"
+            }
+          ],
+          "columns": [
+            {
+              "id": "todo",
+              "title": "To Do"
+            },
+            {
+              "id": "in-progress",
+              "title": "In Progress"
+            },
+            {
+              "id": "done",
+              "title": "Done"
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "id": "ea098e92-8152-477b-a740-59fe407d4d73",
+              "columnId": "in-progress",
+              "content": "Trip to Paris"
+            }
+          ],
+          "columns": [
+            {
+              "id": "todo",
+              "title": "To Do"
+            },
+            {
+              "id": "in-progress",
+              "title": "In Progress"
+            },
+            {
+              "id": "done",
+              "title": "Done"
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "id": "ea098e92-8152-477b-a740-59fe407d4d73",
+              "columnId": "in-progress",
+              "content": "Trip to Paris"
+            }
+          ],
+          "columns": [
+            {
+              "id": "todo",
+              "title": "To Do"
+            },
+            {
+              "id": "in-progress",
+              "title": "In Progress"
+            },
+            {
+              "id": "done",
+              "title": "Done"
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "id": "ea098e92-8152-477b-a740-59fe407d4d73",
+              "columnId": "in-progress",
+              "content": "Trip to Paris"
+            }
+          ],
+          "columns": [
+            {
+              "id": "todo",
+              "title": "To Do"
+            },
+            {
+              "id": "in-progress",
+              "title": "In Progress"
+            },
+            {
+              "id": "done",
+              "title": "Done"
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "id": "ea098e92-8152-477b-a740-59fe407d4d73",
+              "columnId": "in-progress",
+              "content": "Trip to Paris"
+            },
+            {
+              "id": "a08060b2-0a7c-42d2-8561-09969b800116",
+              "columnId": "todo",
+              "content": "Trip to Italy"
+            }
+          ],
+          "columns": [
+            {
+              "id": "todo",
+              "title": "To Do"
+            },
+            {
+              "id": "in-progress",
+              "title": "In Progress"
+            },
+            {
+              "id": "done",
+              "title": "Done"
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "id": "ea098e92-8152-477b-a740-59fe407d4d73",
+              "columnId": "in-progress",
+              "content": "Trip to Paris"
+            },
+            {
+              "id": "a08060b2-0a7c-42d2-8561-09969b800116",
+              "columnId": "todo",
+              "content": "Trip to Italy"
+            },
+            {
+              "id": "c1f98b6c-87b3-4423-97e3-604da26ab99f",
+              "columnId": "todo",
+              "content": "Trip to Iceland"
+            }
+          ],
+          "columns": [
+            {
+              "id": "todo",
+              "title": "To Do"
+            },
+            {
+              "id": "in-progress",
+              "title": "In Progress"
+            },
+            {
+              "id": "done",
+              "title": "Done"
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "id": "ea098e92-8152-477b-a740-59fe407d4d73",
+              "columnId": "in-progress",
+              "content": "Trip to Paris"
+            },
+            {
+              "id": "a08060b2-0a7c-42d2-8561-09969b800116",
+              "columnId": "todo",
+              "content": "Trip to Italy"
+            },
+            {
+              "id": "c1f98b6c-87b3-4423-97e3-604da26ab99f",
+              "columnId": "todo",
+              "content": "Trip to Iceland"
+            },
+            {
+              "id": "64b2d059-bf06-4b56-adbd-30e0a9c605e4",
+              "columnId": "todo",
+              "content": "Trip to Prague"
+            }
+          ],
+          "columns": [
+            {
+              "id": "todo",
+              "title": "To Do"
+            },
+            {
+              "id": "in-progress",
+              "title": "In Progress"
+            },
+            {
+              "id": "done",
+              "title": "Done"
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "id": "ea098e92-8152-477b-a740-59fe407d4d73",
+              "columnId": "in-progress",
+              "content": "Trip to Paris"
+            },
+            {
+              "id": "a08060b2-0a7c-42d2-8561-09969b800116",
+              "columnId": "todo",
+              "content": "Trip to Italy"
+            },
+            {
+              "id": "c1f98b6c-87b3-4423-97e3-604da26ab99f",
+              "columnId": "todo",
+              "content": "Trip to Iceland"
+            },
+            {
+              "id": "64b2d059-bf06-4b56-adbd-30e0a9c605e4",
+              "columnId": "todo",
+              "content": "Trip to Prague"
+            }
+          ],
+          "columns": [
+            {
+              "id": "in-progress",
+              "title": "In Progress"
+            },
+            {
+              "id": "todo",
+              "title": "To Do"
+            },
+            {
+              "id": "done",
+              "title": "Done"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
